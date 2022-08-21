@@ -1,0 +1,155 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span,
+input,
+label,
+select {
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-family: "Assistant", Arial, Helvetica, sans-serif;
+}
+#header {
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  z-index: 999;
+}
+#footer {
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  z-index: 999;
+}
+#header .logo {
+  margin: 5px 0 0 0;
+}
+#footer .logo {
+  margin: 5px 0 0 0;
+  height: 50px;
+}
+p,
+li,
+a,
+span,
+label,
+input {
+  font-size: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#fullContent {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  padding-top: 130px;
+  padding-bottom: 65px;
+}
+#sidebar {
+  width: 10%;
+  display: inline-block;
+  height: 100vh;
+  background-color: #eeeeee;
+  position: fixed;
+}
+#content {
+  width: 89.5%;
+  /* height: 100vh; */
+  display: inline-block;
+  position: absolute;
+  /* top: -105px; */
+  right: 10.2%;
+}
+#myNav {
+  list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
+}
+#myNav li {
+  padding: 10px;
+  font-size: 20px;
+}
+#myNav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#myNav li a:hover {
+  text-decoration: underline;
+  color: #8d59f9;
+}
+#searchBar {
+  text-align: center;
+  background-color: #8d59f980;
+}
+#searchTitle {
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 30px;
+  display: none;
+}
+#searchBar p {
+  margin: 10px 0;
+  display: inline-block;
+}
+#searchBar p label {
+  display: inline-block;
+}
+#searchBar p input,
+#searchBar p select {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+#searchBar .submitP {
+  text-align: left;
+}
+#searchBar p input[type="submit"] {
+  text-align: center;
+  padding: 5px 20px;
+  width: 100%;
+  color: white;
+  background-color: #8d59f9d0;
+  border-color: transparent;
+  box-shadow: 0 0 5px 0 #ffffff80;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#searchBar p input[type="submit"]:hover {
+  color: white;
+  background-color: #8d59f9;
+  box-shadow: 0 0 5px 0 #ffffff80;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#searchResults {
+  margin-top: 20px;
+}
+#searchResults .petImg {
+  display: inline-block;
+  width: 31%;
+  box-shadow: 0 0 5px 0 #00000080;
+  border-radius: 20px;
+  margin: 1%;
+}
