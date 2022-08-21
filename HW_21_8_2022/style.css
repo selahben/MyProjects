@@ -22,6 +22,16 @@ p {
   top: 0;
   width: 100vw;
 }
+#footer {
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+}
+#footer p {
+  text-align: center;
+}
 p,
 li,
 a,
@@ -33,6 +43,7 @@ h2 {
   text-align: center;
   font-size: 40px;
   margin-bottom: 10px;
+  margin-top: 10px;
   text-decoration: underline;
 }
 #myNav {
@@ -42,17 +53,33 @@ h2 {
 }
 #myNav li {
   display: inline;
-  padding: 10px;
   font-size: 20px;
 }
 #myNav li a {
   text-decoration: none;
-  color: black;
+  color: #803300;
   font-weight: bold;
+  padding: 10px;
+  border: 1px solid #803300;
 }
 #myNav li a:hover {
   text-decoration: underline;
-  color: green;
+  color: white;
+  border-color: #803300;
+  background-color: #803300;
+}
+#fixedContact {
+  position: fixed;
+  width: 150px;
+  display: block;
+  top: 2px;
+  left: 5%;
+}
+#fixedContact a img:hover {
+  opacity: 0.8;
+}
+#fixedContact img {
+  width: 100%;
 }
 #hero {
   margin-top: 70px;
@@ -66,28 +93,63 @@ h2 {
   text-align: center;
   padding: 100px 0;
   color: white;
-  font-size: 50px;
-  background-color: #00800080;
-}
-.anchor {
-  padding: 0;
-  margin: 0;
-  min-height: 0;
-  position: relative;
-  top: -80px;
+  font-size: 60px;
+  background-color: #80330080;
 }
 #about {
   text-align: center;
-  padding: 30px 20%;
+  padding: 30px 30%;
 }
-#advantages {
+#aboutExtended {
+  padding-bottom: 200px;
+  padding: 30px 30% 300px;
+}
+a.toPage {
+  color: #80330080;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+a.toPage:hover {
+  color: #803300;
+  font-weight: bold;
+}
+#types {
+  margin-bottom: 50px;
+}
+#types .type {
+  width: 22.8%;
+  margin: 1%;
+  display: inline-block;
+}
+#types .type h3 {
   text-align: center;
-  padding: 30px 41%;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#types .type img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+#gallery {
+  text-align: center;
+  padding: 30px 10%;
   background-color: #f0f0f0;
+}
+#gallery .petImg {
+  display: inline-block;
+  width: 31%;
+  box-shadow: 0 0 5px 0 #00000080;
+  border-radius: 20px;
+  margin: 1%;
+  height: 300px;
+  object-fit: cover;
 }
 #contact {
   text-align: center;
-  padding: 30px 40%;
+  padding: 30px 40% 100px;
   background-color: white;
 }
 #contact p {
