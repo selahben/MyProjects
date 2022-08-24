@@ -145,6 +145,7 @@ h2 {
 }
 #searchResults {
   margin-top: 20px;
+  margin-bottom: 70px;
 }
 #searchResults .petImg {
   display: inline-block;
