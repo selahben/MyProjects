@@ -201,7 +201,7 @@ a.toPage:hover {
   border-radius: 10px;
   cursor: pointer;
 }
-@media (max-width: 787px) {
+@media (max-width: 767px) {
   h2 {
     font-size: 34px;
   }
@@ -277,4 +277,54 @@ a.toPage:hover {
   }
   #contact {
     padding: 20px 20px 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  #about {
+    padding: 20px;
+  }
+  #about p {
+    text-align: center;
+  }
+  #aboutExtended {
+    padding: 20px 20% 100px;
+  }
+  #aboutExtended p {
+    text-align: center;
+  }
+  #gallery .petImg {
+    flex-basis: 31%;
+    max-width: 300px;
+  }
+  #types {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #types h2 {
+    flex-basis: 100%;
+  }
+  #types .type {
+    flex-basis: 45%;
+    margin: 1%;
+    display: inline-block;
+  }
+  #types .type h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #types .type img {
+    width: 100%;
+    display: block;
+    height: 250px;
+    object-fit: cover;
+  }
+  #contact {
+    padding: 20px 20% 50px;
+  }
+  #contact p input {
+    width: 97.5%;
+  }
 }
