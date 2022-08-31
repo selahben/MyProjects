@@ -49,86 +49,34 @@ label,
 input {
   font-size: 20px;
 }
-h2 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-decoration: underline;
-}
-#myNav {
-  list-style-type: none;
-  text-align: center;
-  padding: 20px 0;
-}
-#myNav li {
-  display: inline;
-  font-size: 20px;
-}
-#myNav li a {
-  text-decoration: none;
-  color: #803300;
-  font-weight: bold;
-  padding: 10px;
-  border: 1px solid #803300;
-}
-#myNav li a:hover {
-  text-decoration: underline;
-  color: white;
-  border-color: #803300;
-  background-color: #803300;
-}
 h1 {
   text-align: center;
-  padding: 100px 0 50px;
-  color: white;
+  color: black;
   font-size: 60px;
-  background-color: #80330080;
 }
 #gallery {
   text-align: center;
   padding: 20px;
-}
-#gallery h3 {
-  font-size: 30px;
+  margin-top: 70px;
 }
 #gallery .myImg {
   box-shadow: 0 0 5px 0 #00000080;
-  border-radius: 20px;
   height: 300px;
   object-fit: cover;
   width: 100%;
 }
+#gallery h5 {
+  font-size: 30px;
+}
 @media (max-width: 767px) {
-  h2 {
-    font-size: 34px;
-  }
-  #myNav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0;
-    align-items: center;
-    /* height: 30px; */
-    align-content: space-around;
-  }
-  #myNav li {
-    display: flex;
-    flex-basis: 50%;
-  }
-  #myNav li a {
-    padding: 10px;
-    flex-basis: 100%;
-    margin: 5px;
-    text-align: center;
+  h1 {
+    font-size: 40px;
   }
   #gallery {
     padding: 20px;
     background-color: #f0f0f0;
   }
   #gallery .myImg {
-    flex-basis: 100%;
     width: 100%;
-    margin: 10px;
   }
 }
