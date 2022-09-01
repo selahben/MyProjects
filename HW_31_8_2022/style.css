@@ -1,3 +1,4 @@
+/*GENERAL*/
 body,
 ul,
 li,
@@ -19,10 +20,20 @@ p {
 html {
   overflow-x: hidden;
 }
+p {
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 60px;
+}
 [class*="col"] {
   padding: 10px;
   margin: 0;
 }
+
+/*HEADER*/
 #header {
   background-color: white;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
@@ -32,6 +43,8 @@ html {
   width: 100%;
   z-index: 999;
 }
+
+/*FOOTER*/
 #footer {
   background-color: white;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
@@ -42,18 +55,8 @@ html {
 #footer p {
   text-align: center;
 }
-p,
-li,
-a,
-label,
-input {
-  font-size: 20px;
-}
-h1 {
-  text-align: center;
-  color: black;
-  font-size: 60px;
-}
+
+/*CONTENT*/
 #gallery {
   text-align: center;
   padding: 20px;
@@ -68,15 +71,10 @@ h1 {
 #gallery h5 {
   font-size: 30px;
 }
+
+/*MOBILE*/
 @media (max-width: 767px) {
   h1 {
     font-size: 40px;
-  }
-  #gallery {
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  #gallery .myImg {
-    width: 100%;
   }
 }
