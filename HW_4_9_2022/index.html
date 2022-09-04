@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <title>Homework 4_9_2022</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>המחשבון שלי</h1>
+    <div class="MiddleMe2">
+      <p>
+        <label for="firstNum">מספר ראשון:</label>
+        <input
+          style="margin-bottom: 10px"
+          id="firstNum"
+          name="firstNum"
+          placeholder="0"
+          type="number"
+        />
+      </p>
+      <p>
+        <label for="myAction">בחרו בפעולה אותה תרצו לבצע:</label>
+        <select id="myAction" name="myAction">
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="multi">*</option>
+          <option value="divide">/</option>
+        </select>
+      </p>
+      <p>
+        <label for="secondNum">מספר שני:</label>
+        <input id="secondNum" name="secondNum" placeholder="0" type="number" />
+      </p>
+
+      <p class="CenterMe2">
+        <input
+          id="mySubmit"
+          type="submit"
+          onclick="myCalc()"
+          value="חשב לי את התוצאה!"
+        />
+      </p>
+      <p id="myResult" class="CenterMe2">התוצאה..</p>
+    </div>
+  </body>
+</html>

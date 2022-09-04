@@ -1,0 +1,82 @@
+body {
+  direction: rtl;
+  font-family: "Assistant", Arial, Helvetica, sans-serif;
+  padding-bottom: 50px;
+  margin: 0;
+  background-color: white;
+  background-image: url("./greyCircles.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  background-color: #0000ff60;
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.CenterMe {
+  text-align: center;
+}
+#mySubmit {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 #00000080;
+  background-color: #68df68;
+  border: 1px solid black;
+  float: none;
+  margin-top: 10px;
+}
+#mySubmit:hover {
+  background-color: #12a512;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+}
+input,
+select {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+select {
+  margin-right: 10px;
+}
+.MiddleMe2 {
+  width: 380px;
+  text-align: right;
+  margin: 0 auto;
+}
+.MiddleMe2 label {
+  float: right;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+.MiddleMe2 input {
+  float: left;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.CenterMe2 {
+  text-align: center;
+  clear: both;
+}
+#myResult {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+}
