@@ -7,7 +7,7 @@ window.onload = function () {
   for (x = 0; x < 8; x++) {
     boardRow = [];
     for (y = 0; y < 8; y++) {
-      if (y + x == 0 || (y + x) % 2 == 0) {
+      if ((y + x + 2) % 2 == 0) {
         boardRow.push("Black");
       } else {
         boardRow.push("White");
