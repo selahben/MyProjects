@@ -15,8 +15,6 @@ window.onload = function () {
       id = "myCol_" + x + "_" + y;
       myCol = document.getElementById(id);
       myCol.style.backgroundColor = boardRow[y];
-      // let BGColor = document.getElementById(id).style.backgroundColor;
-      // document.getElementById("myCol_0_0").style.backgroundColor = boardRow[y];
     }
     chessBoard.push(boardRow);
   }
