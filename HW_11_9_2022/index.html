@@ -21,7 +21,7 @@
   <body>
     <header><h1>החנות שלי</h1></header>
     <div id="myProducts" class="row container-fluid">
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 myProductCol">
         <div class="product">
           <h3 class="productTitle">עגבניה</h3>
           <img class="productImg" src="./imgs/Tomato.jpg" alt="עגבניה" />
@@ -42,7 +42,7 @@
           </p>
         </div>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 myProductCol">
         <div class="product">
           <h3 class="productTitle">מלפפון</h3>
           <img class="productImg" src="./imgs/Cucumber.jpg" alt="מלפפון" />
@@ -63,7 +63,7 @@
           </p>
         </div>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 myProductCol">
         <div class="product">
           <h3 class="productTitle">בצל</h3>
           <img class="productImg" src="./imgs/Onion.jpg" alt="בצל" />
@@ -84,7 +84,7 @@
           </p>
         </div>
       </div>
-      <div class="col-md-3 col-6">
+      <div class="col-md-3 col-6 myProductCol">
         <div class="product">
           <h3 class="productTitle">חסה</h3>
           <img class="productImg" src="./imgs/Letuce.jpeg" alt="חסה" />
@@ -107,11 +107,11 @@
       </div>
     </div>
     <div id="myCart" class="row container">
-      <div id="cartProducts" class="col">
+      <div id="cartProducts" class="col-12 col-md-6">
         <h4>המוצרים שלי:</h4>
         <ul id="selectedProducts"></ul>
       </div>
-      <div id="cartSummery" class="col">
+      <div id="cartSummery" class="col-12 col-md-6">
         <h4>סיכום:</h4>
         <p class="cartPriceInfo">
           מחיר לפני הנחה: <span id="beforePrice">0</span>

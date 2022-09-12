@@ -43,7 +43,7 @@ h4 {
   background-color: white;
   margin: 5px;
   padding: 1%;
-  box-shadow: 0 0 10px 0 #000000;
+  box-shadow: 0 0 5px 0 #00000080;
 }
 .productImg {
   height: 300px;
@@ -90,4 +90,34 @@ h4 {
 .myQuantity {
   width: 50px;
   text-align: center;
+}
+.cartProductRemove {
+  margin-top: 10px;
+  float: left;
+  border: 1px solid black;
+  padding: 0 9px;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #myProducts .myProductCol {
+    padding: 0;
+  }
+  .productTitle {
+    font-size: 34px;
+  }
+  .productImg {
+    height: 150px;
+  }
+  #selectedProducts {
+    padding: 0;
+    font-size: 14px;
+  }
+  .cartProductRemove {
+    padding: 0 7px;
+    margin-top: 13px;
+  }
 }

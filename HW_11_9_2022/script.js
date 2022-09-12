@@ -17,9 +17,6 @@ function changeQuan(product) {
     }
   }
   let myQuantity = document.getElementById(product + "Quantity").value;
-  console.log(myQuantity);
-  console.log(myProductIndex);
-  console.log(myProduct);
 
   products[myProductIndex][1][3] = myQuantity;
 
@@ -47,6 +44,9 @@ function changeQuan(product) {
         "<span class=cartProductPrice>" +
         productPrice +
         " ₪</span>" +
+        "<a class=cartProductRemove onclick=removeItem(`" +
+        products[index][0] +
+        "`)>X</a>" +
         "</li>";
     }
     fullPrice += productPrice;
@@ -62,6 +62,21 @@ function changeQuan(product) {
     document.getElementById("discount").innerHTML = "0%";
     document.getElementById("afterPrice").innerHTML = fullPrice + " ₪";
   }
+}
+
+function removeItem(product) {
+  let myProductIndex;
+  let myProduct;
+  for (let index = 0; index < products.length; index++) {
+    if (products[index][0] == product) {
+      myProductIndex = index;
+    }
+  }
+
+  document.getElementById(product + "Quantity").value = 0;
+  products[myProductIndex][1][3] = 0;
+
+  changeQuan(product);
 }
 
 function resetPrice() {
