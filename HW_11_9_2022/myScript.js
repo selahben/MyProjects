@@ -36,7 +36,7 @@ function changeQuan(product) {
         ": </span>" +
         "<span class=cartProductSinglePrice>" +
         products[index][1][2] +
-        " ₪ לקילו</span>" +
+        " ₪ לקילו" +
         " * </span>" +
         "<span class=cartProductQuantity>" +
         products[index][1][3] +
