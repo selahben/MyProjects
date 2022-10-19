@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+%HFDesign {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 0 10px 0 #00000080;
+}
+
+header,
+footer {
+  @extend %HFDesign;
+}
+h1 {
+  font-size: 50px;
+}
+#main {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#myForm {
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #submit {
+    cursor: pointer;
+    background-color: rgb(1, 230, 1);
+    background-image: linear-gradient(180deg, #00000050, transparent);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  #submit:hover {
+    background-image: linear-gradient(0deg, #00000050, transparent);
+  }
+}
+
+@mixin formMessage($BGColor: #00c800) {
+  background-color: $BGColor;
+  background-image: linear-gradient(180deg, #00000050, transparent);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+#success {
+  @include formMessage();
+  margin-bottom: 10px;
+}
+#error {
+  @include formMessage($BGColor: red);
+}

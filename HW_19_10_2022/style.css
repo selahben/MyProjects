@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+header,
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5019607843);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#main {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#myForm label {
+  width: 100%;
+  margin-bottom: 5px;
+  display: block;
+}
+#myForm input,
+#myForm textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+#myForm #submit {
+  cursor: pointer;
+  background-color: rgb(1, 230, 1);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3137254902), transparent);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+#myForm #submit:hover {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3137254902), transparent);
+}
+
+#success {
+  background-color: #00c800;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3137254902), transparent);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#error {
+  background-color: red;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3137254902), transparent);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
