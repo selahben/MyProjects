@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+footer {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+header h1 {
+  text-align: center;
+  font-size: 40px;
+}
+footer p {
+  text-align: center;
+}
+h2 {
+  margin-bottom: 10px;
+}
+h3 {
+  margin: 10px 0;
+}
+#main {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myPost {
+  padding: 20px;
+  margin: 1%;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+.myComment {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
